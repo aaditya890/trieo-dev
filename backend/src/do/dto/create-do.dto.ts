@@ -3,13 +3,13 @@ import { IsNotEmpty, IsNumber, IsString } from 'class-validator';
 export class CreateDoDto {
   @IsString()
   @IsNotEmpty()
-  code!: string;
+  doNumber!: string;
 
   @IsString()
   @IsNotEmpty()
-  branch!: string;
+  customerName!: string;
 
   @IsNumber()
   @IsNotEmpty()
-  date!: number;
+  quantity!: number;
 }

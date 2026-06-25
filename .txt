@@ -1,12 +1,33 @@
-// FLOW OF OUR PR
-Request
-   ↓
-Controller
-   ↓
-DTO
-   ↓
-Service
-   ↓
-Prisma
-   ↓
-Database
+root123 -- pas db
+postgres user -
+step - 1
+Installing nestJs --
+cmd : npx @nestjs/cli new backend 
+
+step - 2
+Creating a delivery module (do) 
+nest g module do
+nest g controller do
+nest g service do
+
+
+step - 3
+(auto imported) the do module in App.module 
+
+step - 4
+creating a dto  - create-do-dto.ts
+
+step - 5 
+imported the type createDoDto in controller @post CreateDoDto @Body body:Type(cre...)
+
+step - 6 
+Installing the class-validators class-transformer
+
+step - 7 
+Integrated the class validators on createDoDto model ex-- @IsNotEmpty() @IsString @IsNumber 
+
+step- 8 
+Installing The Prism ORM (Object Relation Manager)
+cmd : -
+npm install prisma --save-dev
+npm install @prisma/clint

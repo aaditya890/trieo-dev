@@ -7,7 +7,7 @@ export class DoController {
   constructor(private readonly doService: DoService) {}
 
   @Post('create')
-  createDo(@Body() body: CreateDoDto) {
-    return this.doService.createDo(body);
+  createDo(@Body() createDoDto: CreateDoDto) {
+    return this.doService.createDo(createDoDto);
   }
 }
