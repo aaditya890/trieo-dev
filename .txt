@@ -1,0 +1,12 @@
+// FLOW OF OUR PR
+Request
+   ↓
+Controller
+   ↓
+DTO
+   ↓
+Service
+   ↓
+Prisma
+   ↓
+Database
