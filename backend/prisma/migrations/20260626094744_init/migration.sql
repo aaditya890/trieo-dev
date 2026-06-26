@@ -4,7 +4,9 @@ CREATE TABLE "Do" (
     "doNumber" TEXT NOT NULL,
     "customerName" TEXT NOT NULL,
     "quantity" INTEGER NOT NULL,
-    "createAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
 
     CONSTRAINT "Do_pkey" PRIMARY KEY ("id")
 );
+
+

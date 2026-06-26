@@ -1,33 +1,27 @@
-root123 -- pas db
-postgres user -
-step - 1
-Installing nestJs --
-cmd : npx @nestjs/cli new backend 
+create a react directory /frontend -
+cmd :  - npx create vite@latest frontend -- --template react-ts
 
-step - 2
-Creating a delivery module (do) 
-nest g module do
-nest g controller do
-nest g service do
+nest ----- 
+create a nest directory backend - 
+cmd : - npx @nestjs/cli new backend
 
+creating a new module - Do
+cmd : - npx nest g module do
 
-step - 3
-(auto imported) the do module in App.module 
+creating a new controller - Do
+cmd : - npx nest g controller do
 
-step - 4
-creating a dto  - create-do-dto.ts
+creating a new service - Do
+cmd : - npx nest g service do
 
-step - 5 
-imported the type createDoDto in controller @post CreateDoDto @Body body:Type(cre...)
+create a dto file for validation 
+/do/dto/create-do.dto.ts -- 
 
-step - 6 
-Installing the class-validators class-transformer
+install the prisma ORM object relation manager
+cmd : - npm install prisma --save-dev
 
-step - 7 
-Integrated the class validators on createDoDto model ex-- @IsNotEmpty() @IsString @IsNumber 
+install the prims clint 
+cmd : - npm install @prisma/client
 
-step- 8 
-Installing The Prism ORM (Object Relation Manager)
-cmd : -
-npm install prisma --save-dev
-npm install @prisma/clint
+in schema.prisma define the table model
+model Do {} and migrate after with this cmd - npx prisma migrate dev --name init
